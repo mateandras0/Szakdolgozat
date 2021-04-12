@@ -1,0 +1,2 @@
+# Szakdolgozat
+Szakdolgozat mintaalkalmazások
