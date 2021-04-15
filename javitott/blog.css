@@ -1,0 +1,96 @@
+.crow {
+  border: 3px solid white;
+  margin: 10px 0;
+  background-color:white;
+  border-radius:15px;
+  box-shadow: 0px 0px 50px 30px rgba(0, 0, 0, 0.3);
+}
+.chead {
+  margin-bottom: 10px;
+  background-color: rgb(228, 234, 245);
+  color:black;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  padding-left:20px;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-bottom: 2px solid #ccc;
+}
+.cname {
+  color: #e88b66;
+  font-weight: bold;
+}
+.ctime {
+  color: #aaa;
+  font-size: 0.95em;
+}
+.cmsg {
+  font-size: 1.1em;
+  background-color:white;
+  color:black;
+  border-radius:15px;
+  padding-left:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+body {
+  background-image:url('wsback.jpg');
+  color: white;
+  font-size: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  width: 75%;
+}
+
+hr {
+  margin: 40px;
+  color: #fff;
+  width: 90%;
+  background-color:white;
+  height: 3px;
+  box-shadow: 0px 0px 50px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+#cadd {
+  background: #f2f2f2;
+  border: 2px solid #ccc;
+  padding: 15px;
+  border-radius:15px;
+  box-shadow: 0px 0px 50px 30px rgba(0, 0, 0, 0.6);
+  
+}
+#cadd h1 {
+  font-size: 1.3em;
+  color:black;
+}
+#cadd input[type=text], #cadd textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  resize: none;
+  border-radius:0px;
+}
+#cadd input[type=submit] {
+  text-transform: uppercase;
+  background-color: rgb(228, 234, 245);
+  border: 1px solid grey;
+  color: grey;
+  font-size: 0.6em;
+  font-weight:bold;
+  width: 120px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 150px;
+}
+
+#cadd input[type=submit]:hover {
+  transform: translateY(-3px);
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.19), 1px 6px 6px rgba(0, 0, 0, 0.23);
+    background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15) ), rgb(209,209,209);
+  color:white;
+}

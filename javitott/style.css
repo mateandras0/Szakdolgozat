@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+}
+
+.center {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+
+html {
+  font-family: "Inter", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  color: rgb(21, 21, 21);
+  font-size: 1.2em;
+}
+
+body {
+  background-image: url('background.png');
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin: 0px;
+  color:white;
+}
+
+
+body.egyszinu{
+  background: rgb(245, 245, 245);
+}
+
+header {
+  padding: 20px;
+  margin: 0px;
+  font-size: 30px;
+  font-weight:bold;
+  text-align: left;
+}
+.betting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1, h2 {
+  color: black;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color:black;
+  text-align:center;
+  padding-bottom:30px;
+}
+h4 {
+  color: white;
+  font-weight:bold;
+  text-align:left;
+}
+#errors {
+  color: red;
+  font-size: 1em;
+  text-align: center;
+}
+.dark {
+  color: rgb(24, 24, 24);
+}
+.yellow {
+  color: white;
+}
+
+footer {
+	padding-top:50px;
+	padding-right: 30px;
+  margin: 0px;
+  font-size: 0.9em;
+  font-weight:bold;
+  text-align: right;
+  color: white;
+}
+
+footer.login {
+	padding-top:50px;
+	padding-right: 30px;
+  position: absolute;
+  top: 83.6vh;
+  left: 0;
+  width: 100%;
+    text-align: right;
+}
+footer.login.unfixed {
+  position: initial;
+  margin-top: 30px;
+}
+
+input[type=text],input[type=password], input[type=number], input[type=date] {
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 25vw;
+  max-width: 70%;
+  background-color:white;
+  color:black;
+}
+
+label {
+  font-size: 1em;
+  color: black;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  
+}
+.container2 {
+  margin:30px;
+  padding:0;
+  max-width: 550px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px 30px rgba(0, 0, 0, 0.5);
+}
+table {
+  border-collapse: collapse;
+  overflow: hidden;
+  margin: auto;
+  color: rgb(21, 21, 21);
+}
+
+.elso-sor {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+table.betting tr {
+  border-bottom: 1px solid rgb(107, 107, 107);
+}
+table.betting.uj tr {
+  border: none;
+}
+
+td {
+  padding: 10px 30px;
+}
+
+.signup {
+  text-align: right;
+}
+
+tr {
+  text-align: left;
+}
+
+
+
+.gomb {
+text-transform: uppercase;
+  background: linear-gradient( rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.09) ), rgb(242,242,242);
+  border: 1px solid grey;
+  color: grey;
+  font-size: 0.6em;
+  font-weight:bold;
+  width: 120px;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 180px;
+
+}
+.gomb:hover {
+  background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15) ), rgb(209,209,209);
+  color:white;
+}
+
+.gomb.secondary {
+	margin-top:20px;
+	margin-bottom:0px;
+  background-color: rgb(56, 224, 84);
+  border: 1px solid grey;
+  color: grey;
+  font-size: 0.6em;
+}
+.gomb.secondary:hover {
+  background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15) ), rgb(25, 181, 51);
+  color:white;
+}
+.gomb.secondary.logout {
+background-color: white;
+  border: 1px solid grey;
+  color: grey;
+  font-size: 0.4em;
+  text-align:center;
+  text-decoration: none;
+  display: inline;
+}
+
+.search {
+background-color: white;
+  border: 1px solid grey;
+  color: grey;
+  font-size: 0.7em;
+  text-align:center;
+  text-decoration: none;
+  margin-left:10px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight:bold;
+}
+
+.search:hover {
+	background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15) ), white;
+  color:white;
+}
+
+.gomb.secondary.logout:hover {
+	background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15) ), white;
+  color:white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*RESZPONZIVITAS*/
+
+[class*="col-"] {
+  /*mobile*/
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media only screen and (min-width: 600px) {
+  /* tablet */
+  .col-t-1 {
+    width: 8.33%;
+  }
+  .col-t-2 {
+    width: 16.66%;
+  }
+  .col-t-3 {
+    width: 25%;
+  }
+  .col-t-4 {
+    width: 33.33%;
+  }
+  .col-t-5 {
+    width: 41.66%;
+  }
+  .col-t-6 {
+    width: 50%;
+  }
+  .col-t-7 {
+    width: 58.33%;
+  }
+  .col-t-8 {
+    width: 66.66%;
+  }
+  .col-t-9 {
+    width: 75%;
+  }
+  .col-t-10 {
+    width: 83.33%;
+  }
+  .col-t-11 {
+    width: 91.66%;
+  }
+  .col-t-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* PC */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
